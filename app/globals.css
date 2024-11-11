@@ -1,21 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  
+html,
+body,
+:root
+{
+  height: 100%;
+  background-color: white;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html::-webkit-scrollbar{
+  width: .5rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html::-webkit-scrollbar-track{
+  background: white;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: rgb(37 99 235);
+  border-radius: 70px;
 }
