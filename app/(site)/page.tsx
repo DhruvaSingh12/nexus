@@ -102,8 +102,8 @@ export default async function Home() {
 
       {/* Botpress Chat Integration */}
       <div className="hidden">
-        <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-        <script src="https://mediafiles.botpress.cloud/1e3ba5d0-6ee2-492c-95b8-45c2ffa766fd/webchat/v2.1/config.js"></script>
+        <script defer src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+        <script defer  src="https://mediafiles.botpress.cloud/1e3ba5d0-6ee2-492c-95b8-45c2ffa766fd/webchat/v2.1/config.js"></script>
       </div>
     </div>
   );
