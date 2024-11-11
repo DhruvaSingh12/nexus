@@ -78,17 +78,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // Handling club and position input
-  const handleClubChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
-    index: number
-  ) => {
-    const updatedClubs = [...club];
-    updatedClubs[index] = e.target.value;
-    setClub(updatedClubs);
-  };
-
-
 
   const clubs = [
     "GDSC",
